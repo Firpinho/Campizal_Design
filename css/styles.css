@@ -1,0 +1,655 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Montserrat';
+    font-size: 62.5%;
+    color: rgb(58, 58, 58);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* HEADER  */
+
+header {
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 20px;
+    position: sticky;
+    top: 0;
+    right: 0;
+}
+
+header img{
+    width: 50px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+nav ul li{
+    max-width: 150px;
+}
+
+header nav ul li a{
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+nav hr {
+    height: 30px;
+    width: 1px;
+    border-style: solid;
+    background-color: rgb(44, 44, 44);
+    border-color: rgb(44, 44, 44);
+}
+
+.opt-1, .opt-2, .opt-3, .opt-4{
+    display: none;
+}
+
+/* MAIN CONTENT  */
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:30% 0;
+    color: #104095;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.651)), url('../img/index.webp');
+    background-size: cover;
+    background-position: center center;
+}
+
+.title{
+    font-family: 'Ubuntu';
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.main img {
+    width: 150px;;
+}
+
+.heading h1 {
+    font-size: 40px;
+}
+
+.heading h2 {
+    font-size: 25px;
+}
+
+.economia-plateada {
+    font-size: 15px;
+    margin-bottom: 90px;
+}
+
+.economia-plateada  p{
+    margin-bottom: 5px;
+}
+
+.buttons-container{
+    margin-top: 10px;
+}
+
+button{
+    padding: 10px;
+    border-radius: 100px;
+    border-style: solid;
+    color: ghostwhite;
+    font-weight: bold;
+    background-color: #104095;
+    border-color: #104095;
+    cursor: pointer;
+}
+
+/* ADY CONTENT*/
+
+.ady-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ady-content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    text-align: center;
+    font-weight: bolder;
+    padding: 15px 0;
+}
+
+.ady-content hr{
+    height: 30px;
+    background-color: #104095;
+    border-color: #104095;
+    border-style: solid;
+}
+
+.ady-content img {
+    width: 110px;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    color: ghostwhite;
+    background-color: #104095;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    position: relative;
+    bottom: 0;
+   /*  padding: 50px 0; */
+}
+
+footer img {
+    filter: brightness(0) invert(1);
+    width: 50px;
+}
+
+.logo {
+    font-family: 'Ubuntu';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .image {
+    text-align: center;
+}
+
+.footer-title {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+/*
+
+  FIN INDEX / HEADER / FOOTER
+
+*/
+
+main {
+    background-image: linear-gradient(to top,rgb(255, 255, 255), rgba(255, 255, 255, 0.596)), url('../img/nosotros.webp');
+    background-size: cover;
+    background-position: center center;
+}
+
+main h1 {
+    font-size: 30px;
+    padding-top: 25px;
+    text-align: center;
+    text-justify: distribute;
+    margin-bottom: 30px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.mision {
+    padding: 40px 20px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.mision .title {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.mision ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team article {
+    display: flex;
+    padding: 40px 0;
+}
+
+.team article img {
+    padding-right: 20px;
+}
+
+.team img {
+    width: 120px;
+}
+
+/*
+    FIN NOSOTROS 
+*/
+.container-economia-plateada {
+    display: flex;
+    flex-direction: column;
+/*     grid-template-columns: auto;
+    grid-template-rows: 50px auto auto; */
+}
+
+.premium{
+    color: ghostwhite;
+    padding: 25px 0;
+}
+
+.premium article{
+    padding-bottom: 50px;
+}
+
+.premium h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.premium h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.premium hr {
+    background-color: #8b51f5;
+    border-color: #8b51f5;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.premium p {
+    text-align: justify;
+    text-justify: distribute;
+    font-size: small;
+    font-weight: 500;
+    margin: 25px
+}
+
+.premium button {
+    padding: 15px 50px;
+    font-size: 20px;
+}
+
+.premium .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 90px 0;
+}
+
+.apartamentos-premium{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.651)), url('../img/apartamentos_premium.webp');
+    background-size: cover;
+    background-position: center center;
+}
+
+.inversion-retiro{
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.651)), url('../img/inversion_retiro.webp');
+    background-size: cover;
+    background-position: center center;
+}
+
+/*
+    FIN APARTAMENTOS PREMIUM
+*/
+
+.campizal{
+    color: rgb(58, 58, 58);
+    padding: 25px 0;
+}
+
+.campizal article{
+    padding-bottom: 50px;
+}
+
+.campizal h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.campizal h2 {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.campizal hr {
+    background-color: #104095;
+    border-color: #104095;
+    width: 120px;
+    margin: 0 auto;
+}
+
+.campizal p {
+    text-align: justify;
+    text-justify: distribute;
+    font-size: small;
+    font-weight: 500;
+    margin: 25px
+}
+
+.campizal button {
+    padding: 15px 50px;
+    font-size: 20px;
+}
+
+.campizal .button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 90px 0;
+}
+
+.confort{
+    background-image: linear-gradient(to top,rgb(255, 255, 255), rgba(255, 255, 255, 0.596)), url('../img/confort.webp');
+    background-size: cover;
+    background-position: center center;
+}
+
+/*
+    Fin campizal class
+*/
+
+
+@media screen and (min-width:600px){
+
+    /*
+        index
+    */
+    .title{
+        display: flex;
+        align-items: center;
+        font-size: 70px;
+    }
+
+    .title img {
+        width: 100px;
+    }
+
+    .main{
+        padding: 5% 0;
+    }
+
+    .buttons-container button{
+        padding: 15px;
+        font-size: medium;
+        margin: 0 5px 0 0;
+    }
+
+    /*
+        nosostros
+    */
+    .team {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px
+    }
+
+    .mision .title {
+        font-size: large;
+    }
+}
+
+
+@media screen and (min-width:768px){
+    /*
+        index
+    */
+    .opt-1, .opt-2{
+        display: block;
+    }
+
+    .main{
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 5% 0 5% 10%;
+    }
+
+    .title img {
+        width: 150px;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    .heading h1{
+        font-size: 60px;
+    }
+
+    .heading h2{
+        font-size: 35px;
+    }
+
+    button{
+        padding: 13px;
+        margin: 0 10px 0 0;
+    }
+    /*
+        nosostros
+    */
+    .team-member {
+        margin: 100px 30px;
+    }
+
+    .team img {
+        width: 200px;
+    }
+
+    .mision {
+        padding: 130px 60px;
+        font-size: large;
+    }
+
+    .premium .button-container {
+        padding: 120px 0;
+    }
+
+    .premium h1 {
+        text-align: left;
+        margin-left: 35px;
+    }
+
+    .campizal .button-container {
+        padding: 120px 0;
+    }
+
+    .campizal h1 {
+        text-align: left;
+        margin-left: 35px;
+    }
+}
+
+
+@media screen and (min-width:980px){
+    /*
+        index
+    */
+    .opt-4, .opt-3{
+        display: block;
+    }
+
+    footer .logo {
+        font-size: 20px;
+        justify-content: flex-end;
+    }
+    /*
+        nosostros
+    */
+    main h1 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    main h2 {
+        font-size: 30px;
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    .team img {
+        width: 250px;
+    }
+
+    .mision {
+        padding: 130px 60px;
+        font-size: large;
+    }
+
+    .premium h1 {
+        font-size: 40px;
+    }
+
+    .premium h2 {
+        text-align: left;
+        margin-left: 20rem;
+    }
+
+    .main-premium p {
+        max-width: 60%;
+        font-size: medium;
+    }
+    
+    .main-premium hr{
+        margin: 0 45px;
+    }
+
+    .main-premium-list p{
+        font-size: 20px;
+    }
+
+    .campizal h1 {
+        font-size: 40px;
+    }
+
+    .campizal h2 {
+        text-align: left;
+        margin-left: 20rem;
+    }
+
+    .main-campizal p {
+        max-width: 60%;
+        font-size: medium;
+    }
+    
+    .main-campizal hr{
+        margin: 0 45px;
+    }
+
+    .main-campizal-list p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:1300px){
+
+    .main-premium p {
+        padding-top: 50px;
+        max-width: 50%;
+        font-size: medium;
+    }
+    
+    .main-premium-list {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .main-premium-list .list{
+        padding: 0 100px;
+        font-size: 90px;
+        width: 100%;
+    }
+    
+    .main-premium-list button{
+        padding: 15px 50px;
+        font-size: 30px;
+    }
+
+    .main-campizal p {
+        padding-top: 50px;
+        max-width: 50%;
+        font-size: medium;
+    }
+    
+    .main-campizal-list {
+        padding-top: 50px;
+        display: flex;
+    }
+
+    .main-campizal-list .list{
+        padding: 0 100px;
+        font-size: 90px;
+        width: 100%;
+    }
+    
+    .main-campizal-list button{
+        padding: 15px 50px;
+        font-size: 30px;
+    }
+}
+
+.economia-plateada-link{
+    color: #8b51f5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.buttons-container .economia-plateada-button{
+    background-color: #8b51f5;
+    border-color: #8b51f5;
+}
+
+.economia-plateada-button{
+    background-color: #8b51f5;
+    border-color: #8b51f5;
+}
+
+.azul {
+    color: #104095;
+}
+
+ul {
+    list-style: none;
+}
